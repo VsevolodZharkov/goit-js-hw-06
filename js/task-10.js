@@ -29,8 +29,8 @@ function createBoxes(amount) {
   for (var i = 0; i < amount; i++) {
     let div = document.createElement("div");
     div.style.backgroundColor = getRandomHexColor();
-		div.style.width = '20px'
-		div.style.height = '20px'
+		div.style.width = '20px';
+		div.style.height = '20px';
     div.classList.add("div-box");
     div.style.display = "inline-block";
     divRef.appendChild(div);
