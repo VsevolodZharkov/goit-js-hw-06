@@ -5,7 +5,7 @@ const spnEl = document.querySelector('#name-output');
 const red = '';
 
 
-inpEl.addEventListener('keydown', function(e) {
+inpEl.addEventListener('input', function(e) {
 	if (e.keyCode === 13) {
 		// можете делать все что угодно со значением текстового поля
 		

@@ -10,3 +10,20 @@ btnRef.addEventListener('click', () => {
 	valEl.innerHTML = parseInt(valEl.innerHTML) + 1;
 	console.log('добавляем один', valEl);
 });
+
+// const btnMin = document.querySelector('button[data-action="decrement"]');
+// const btnPlus = document.querySelector('button[data-action="increment"]');
+// const span = document.querySelector('#value');
+// console.log(span);
+// console.log(btnMin);
+// console.log(btnPlus);
+// let counterValue = 0;
+
+// btnMin.addEventListener("click", () => {
+// 	counterValue -= 1;
+// 	span.textContent = counterValue;
+// })
+// btnPlus.addEventListener("click", () => {
+// 	counterValue += 1;
+// 	span.textContent = counterValue;
+// })

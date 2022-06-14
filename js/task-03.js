@@ -1,3 +1,5 @@
+const ul = document.querySelector('.gallery');
+// console.log(ul);
 const images = [
   {
     url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -12,14 +14,5 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-const indexEl = document.querySelector('.gallery');
-
-Array.prototype.forEach.call(images, (element) => {
-  let eleEl = document.createElement('li');
-  let imgEl = document.createElement('img');
-	imgEl.height = 120;
-	imgEl.setAttribute('src', element.url);
-	imgEl.setAttribute('alt', element.alt);
-	indexEl.append(eleEl);
-	eleEl.append(imgEl);
-});
+const newLi = images.map(({url, alt}) => `<li class="list"><img src ="${url}" alt="${alt}" class="img_list"></img></li>`).join("");
+ul.insertAdjacentHTML("beforeend", newLi)
