@@ -23,11 +23,6 @@ button {
   cursor: pointer;
 }
 
-/* .div-box {
-	width: 30px;
-	height: 30px;
-} */
-
 .gallery {
 	display: flex;
 }
