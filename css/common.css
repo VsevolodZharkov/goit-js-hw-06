@@ -39,3 +39,11 @@ button {
 	width: 320px;
 	height: 180px;
 }
+
+#boxes {
+	display: flex;
+	flex-wrap: wrap;
+}
+.div-box {
+	display: block;
+}
