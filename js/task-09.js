@@ -13,3 +13,15 @@ btnEl.addEventListener('click', () => {
 	let colorBody = document.body.style.backgroundColor = getRandomHexColor();
 	spnEL.textContent = colorBody;
 });
+
+
+
+// const span = document.querySelector('.color')
+// const button = document.querySelector('.change-color');
+// const body = document.querySelector('body')
+// button.addEventListener('click', changeColor);
+// function changeColor() {
+// 	body.style.backgroundColor = getRandomHexColor();
+// 	span.textContent = getRandomHexColor();
+// }
+
