@@ -9,9 +9,9 @@ const btnEl = document.querySelector('.change-color');
 
 
 btnEl.addEventListener('click', () => {
-
-	let colorBody = document.body.style.backgroundColor = getRandomHexColor();
-	spnEL.textContent = colorBody;
+	const color = getRandomHexColor();
+	document.body.style.backgroundColor = color;
+	spnEL.textContent = color;
 });
 
 

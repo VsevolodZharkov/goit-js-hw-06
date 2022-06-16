@@ -1,14 +1,13 @@
 
 
-const rng = document.getElementById('font-size-control');
-const text = document.getElementById('text');  
-rng.addEventListener("input", 
-  function() {            
-    text.style.fontSize = rng.value + 'px'
-		console.log(rng.value)           
-  });
-
-
+const input = document.getElementById('font-size-control');
+const span = document.getElementById('text');  
+input.addEventListener("input", change)
+  
+function change(evt) {        
+    span.style.fontSize = evt.target.value + 'px';   
+  };
+	span.style.fontSize = input.value + 'px';   
 
 // const input = document.querySelector("#font-size-control")
 // console.log(input);

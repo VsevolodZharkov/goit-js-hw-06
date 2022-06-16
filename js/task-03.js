@@ -15,4 +15,6 @@ const images = [
   },
 ];
 const newLi = images.map(({url, alt}) => `<li class="list"><img src ="${url}" alt="${alt}" class="img_list"></img></li>`).join("");
-ul.insertAdjacentHTML("beforeend", newLi)
+
+
+ul.insertAdjacentHTML("beforeend", newLi);
