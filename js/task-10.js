@@ -18,15 +18,14 @@ function handlerCr() {
 refs.destroy.addEventListener("click", destroyBoxes);
 
 function createBoxes(amount) {
-  for (var i = 0; i <= amount; i++) {
+  for (var i = 1; i <= amount; i += 1) {
     let div = document.createElement("div");
     div.style.backgroundColor = getRandomHexColor();
     div.classList.add("div-box");		
-		div.style.width = 30 + 'px'		
-		div.style.height = 30 + 'px';
+		div.style.width = (i === 1 ) ? 30 + 'px' : 20 + (i * 10) + 'px';
+		div.style.height = (i === 1 ) ? 30 + 'px' : 20 + (i * 10) + 'px';
 		refs.divRef.appendChild(div);
   }
-	
 }
 
 function destroyBoxes() {
